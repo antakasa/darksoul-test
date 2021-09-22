@@ -467,7 +467,7 @@ var _serverDefault = parcelHelpers.interopDefault(_server);
 var _packageJson = require("./package.json");
 var _packageJsonDefault = parcelHelpers.interopDefault(_packageJson);
 var _react1 = require("@mdx-js/react");
-var _contentMdx = require("./src/content.mdx");
+var _contentMdx = require("./src/Content.mdx");
 var _contentMdxDefault = parcelHelpers.interopDefault(_contentMdx);
 var _subHeader = require("./src//SubHeader");
 const components = {
@@ -511,8 +511,57 @@ function render() {
     console.log(`Wrote ${outputFile}`);
 }
 
-},{"./package.json":"8f6lU","./src/content.mdx":"g0YrP","./src//SubHeader":"144Ho","@parcel/transformer-js/src/esmodule-helpers.js":"ebVgB"}],"8f6lU":[function(require,module,exports) {
-module.exports = JSON.parse("{\"name\":\"2021-09-mdx-test\",\"license\":\"MIT\",\"browserslist\":[\">0.25% in FI\",\"last 1 chrome version\",\"last 1 firefox version\",\"Firefox ESR\",\"not op_mini all\",\"not dead\"],\"private\":true,\"yleDataviz\":{\"externalContent\":false},\"scripts\":{\"start\":\"cross-var cross-env NODE_ENV=development APP_NAME=$npm_package_name parcel *.html\",\"gitrepo\":\"cross-var hub create -p Yleisradio/lusi-dataviz-$npm_package_name\",\"confgenerate\":\"dataviz-deploy generate --dir build --exclude *.es6.js\",\"createhtml\":\"parcel watch createHTML.js --target node\",\"deploy\":\"npm run build && dataviz-deploy sync lusi $npm_package_name && cross-var echo \\\"https://lusi-dataviz.ylestatic.fi/$npm_package_name\\\"\",\"deploy:test\":\"npm run build:test && dataviz-deploy sync lusi-test $npm_package_name && cross-var echo \\\"https://lusi-dataviz.test.ylestatic.fi/$npm_package_name\\\"\",\"build\":\"cross-var cross-env NODE_ENV=production APP_NAME=$npm_package_name parcel build index.html --public-url https://lusi-dataviz.ylestatic.fi/$npm_package_name/ && npm run confgenerate\",\"build:test\":\"cross-var cross-env NODE_ENV=production APP_NAME=$npm_package_name parcel build index.html --public-url https://lusi-dataviz.test.ylestatic.fi/$npm_package_name/ && npm run confgenerate\",\"prebuild\":\"rimraf build\",\"prebuild:test\":\"rimraf build\"},\"engines\":{\"node\":\"14\"},\"devDependencies\":{\"@mdx-js/react\":\"^1.0.0\",\"@parcel/transformer-image\":\"^2.0.0-rc.0\",\"@parcel/transformer-mdx\":\"^2.0.0-rc.0\",\"@parcel/transformer-sass\":\"^2.0.0-rc.0\",\"@yleisradio/dataviz-deploy\":\"^0.3.3\",\"autoprefixer\":\"^10.3.2\",\"cross-env\":\"^5.2.1\",\"cross-var\":\"^1.1.0\",\"parcel\":\"^2.0.0-rc.0\",\"parcel-reporter-runcreatehtml\":\"file:plugins/parcel-reporter-runcreatehtml\",\"parcel-namer-es6\":\"file:plugins/parcel-namer-es6\",\"postcss\":\"^8.3.6\",\"postcss-prefix-selector\":\"^1.12.0\",\"posthtml\":\"^0.16.5\",\"posthtml-expressions\":\"^1.9.0\",\"prettier\":\"^2.4.1\",\"react\":\"^17.0.0\",\"react-dom\":\"^17.0.0\",\"rimraf\":\"^3.0.2\"},\"targets\":{\"node\":{\"context\":\"node\",\"engines\":{\"node\":\"14\"},\"distDir\":\".\",\"outputFormat\":\"commonjs\"},\"default\":{\"context\":\"browser\",\"distDir\":\"./build\"}},\"dependencies\":{}}");
+},{"./package.json":"8f6lU","./src//SubHeader":"144Ho","@parcel/transformer-js/src/esmodule-helpers.js":"ebVgB","./src/Content.mdx":"g0YrP"}],"8f6lU":[function(require,module,exports) {
+module.exports = JSON.parse("{\"name\":\"2021-09-mdx-test\",\"license\":\"MIT\",\"browserslist\":[\">0.25% in FI\",\"last 1 chrome version\",\"last 1 firefox version\",\"Firefox ESR\",\"not op_mini all\",\"not dead\"],\"private\":true,\"yleDataviz\":{\"externalContent\":false},\"scripts\":{\"start\":\"cross-var cross-env NODE_ENV=development APP_NAME=$npm_package_name parcel *.html\",\"gitrepo\":\"cross-var hub create -p Yleisradio/lusi-dataviz-$npm_package_name\",\"confgenerate\":\"dataviz-deploy generate --dir build --exclude *.es6.js\",\"createhtml\":\"parcel watch createHTML.js --target node\",\"deploy\":\"npm run build && dataviz-deploy sync lusi $npm_package_name && cross-var echo \\\"https://lusi-dataviz.ylestatic.fi/$npm_package_name\\\"\",\"deploy:test\":\"npm run build:test && dataviz-deploy sync lusi-test $npm_package_name && cross-var echo \\\"https://lusi-dataviz.test.ylestatic.fi/$npm_package_name\\\"\",\"build\":\"cross-var cross-env NODE_ENV=production APP_NAME=$npm_package_name parcel build index.html --target legacy --public-url https://lusi-dataviz.ylestatic.fi/$npm_package_name/\",\"build:test\":\"cross-var cross-env NODE_ENV=production APP_NAME=$npm_package_name parcel build index.html --public-url https://lusi-dataviz.test.ylestatic.fi/$npm_package_name/\",\"prebuild\":\"rimraf build\",\"prebuild:test\":\"rimraf build\"},\"engines\":{\"node\":\"14\"},\"devDependencies\":{\"@mdx-js/react\":\"^1.0.0\",\"@parcel/transformer-image\":\"^2.0.0-rc.0\",\"@parcel/transformer-mdx\":\"^2.0.0-rc.0\",\"@parcel/transformer-sass\":\"^2.0.0-rc.0\",\"autoprefixer\":\"^10.3.2\",\"cross-env\":\"^5.2.1\",\"cross-var\":\"^1.1.0\",\"parcel\":\"^2.0.0-rc.0\",\"parcel-reporter-runcreatehtml\":\"file:plugins/parcel-reporter-runcreatehtml\",\"parcel-namer-es6\":\"file:plugins/parcel-namer-es6\",\"postcss\":\"^8.3.6\",\"postcss-prefix-selector\":\"^1.12.0\",\"posthtml\":\"^0.16.5\",\"posthtml-expressions\":\"^1.9.0\",\"prettier\":\"^2.4.1\",\"react\":\"^17.0.0\",\"react-dom\":\"^17.0.0\",\"rimraf\":\"^3.0.2\"},\"targets\":{\"legacy\":{\"includeNodeModules\":true,\"distDir\":\"./build\",\"engines\":{\"browsers\":\"> 0.5%, last 2 versions, not dead\"}},\"default\":{\"context\":\"browser\",\"distDir\":\"./build\",\"includeNodeModules\":true},\"node\":{\"context\":\"node\",\"engines\":{\"node\":\"14\"},\"distDir\":\".\",\"outputFormat\":\"commonjs\"}},\"dependencies\":{}}");
+
+},{}],"144Ho":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "SubHeader", ()=>SubHeader
+);
+var _jsxRuntime = require("react/jsx-runtime");
+const SubHeader = ({ test  })=>{
+    return(/*#__PURE__*/ _jsxRuntime.jsx("h2", {
+        __source: {
+            fileName: "src/SubHeader.js",
+            lineNumber: 2
+        },
+        __self: undefined,
+        children: "adsf"
+    }));
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"ebVgB"}],"ebVgB":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, '__esModule', {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === 'default' || key === '__esModule') return;
+        // Skip duplicate re-exports when they have the same value.
+        if (key in dest && dest[key] === source[key]) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
 
 },{}],"g0YrP":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -595,55 +644,6 @@ const Header = ({ test  })=>{
         },
         __self: undefined,
         children: test
-    }));
-};
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"ebVgB"}],"ebVgB":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, '__esModule', {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === 'default' || key === '__esModule') return;
-        // Skip duplicate re-exports when they have the same value.
-        if (key in dest && dest[key] === source[key]) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"144Ho":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "SubHeader", ()=>SubHeader
-);
-var _jsxRuntime = require("react/jsx-runtime");
-const SubHeader = ({ test  })=>{
-    return(/*#__PURE__*/ _jsxRuntime.jsx("h2", {
-        __source: {
-            fileName: "src/SubHeader.js",
-            lineNumber: 2
-        },
-        __self: undefined,
-        children: "adsf"
     }));
 };
 
