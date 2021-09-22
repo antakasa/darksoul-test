@@ -4,7 +4,7 @@ import React from "react";
 import ReactDOMServer from "react-dom/server";
 import pkg from './package.json';
 import { MDXProvider } from "@mdx-js/react";
-import Content from './src/content.mdx'
+import Content from './src/Content.mdx'
 import { SubHeader} from "./src//SubHeader"
 
 
