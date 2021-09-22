@@ -20,8 +20,8 @@
     "createhtml": "parcel watch createHTML.js --target node",
     "deploy": "npm run build && dataviz-deploy sync lusi $npm_package_name && cross-var echo \"https://lusi-dataviz.ylestatic.fi/$npm_package_name\"",
     "deploy:test": "npm run build:test && dataviz-deploy sync lusi-test $npm_package_name && cross-var echo \"https://lusi-dataviz.test.ylestatic.fi/$npm_package_name\"",
-    "build": "cross-var cross-env NODE_ENV=production APP_NAME=$npm_package_name parcel build index.html --public-url https://lusi-dataviz.ylestatic.fi/$npm_package_name/ && npm run confgenerate",
-    "build:test": "cross-var cross-env NODE_ENV=production APP_NAME=$npm_package_name parcel build index.html --public-url https://lusi-dataviz.test.ylestatic.fi/$npm_package_name/ && npm run confgenerate",
+    "build": "cross-var cross-env NODE_ENV=production APP_NAME=$npm_package_name parcel build index.html --public-url https://lusi-dataviz.ylestatic.fi/$npm_package_name/",
+    "build:test": "cross-var cross-env NODE_ENV=production APP_NAME=$npm_package_name parcel build index.html --public-url https://lusi-dataviz.test.ylestatic.fi/$npm_package_name/",
     "prebuild": "rimraf build",
     "prebuild:test": "rimraf build"
   },
