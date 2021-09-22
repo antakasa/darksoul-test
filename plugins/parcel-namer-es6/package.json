@@ -1,0 +1,7 @@
+{
+  "name": "parcel-namer-es6",
+  "engines": {
+    "parcel": "^2.0.0-rc.0"
+  },
+  "version": "0.1"
+}
