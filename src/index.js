@@ -12,7 +12,7 @@ import { SubHeader} from "./SubHeader"
 import ReactDOMServer from 'react-dom/server';
 //ss
 const components = {
-  h1: props => <h1 style={{color: 'blue'}} {...props} />,
+  h1: props => <h1 onClick={() => alert("mooooiii")} style={{color: 'blue'}} {...props} />,
   SubHeader: SubHeader
 }
 
