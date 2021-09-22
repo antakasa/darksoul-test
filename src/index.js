@@ -10,7 +10,7 @@ import { MDXProvider } from "@mdx-js/react";
 import Content from './Content.mdx'
 import { SubHeader} from "./SubHeader"
 import ReactDOMServer from 'react-dom/server';
-
+//ss
 const components = {
   h1: props => <h1 style={{color: 'blue'}} {...props} />,
   SubHeader: SubHeader
