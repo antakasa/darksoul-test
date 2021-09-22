@@ -7,7 +7,7 @@
 import React from "react";
 import { render } from "react-dom";
 import { MDXProvider } from "@mdx-js/react";
-import Content from './content.mdx'
+import Content from './Content.mdx'
 import { SubHeader} from "./SubHeader"
 import ReactDOMServer from 'react-dom/server';
 
