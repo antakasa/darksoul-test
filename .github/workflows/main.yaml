@@ -40,7 +40,6 @@ jobs:
       # Build the project and add .nojekyll file to supress default behaviour
       - name: Build
         run: |
-          node --version
           npm run build
           touch ./build/.nojekyll
 
