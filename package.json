@@ -70,11 +70,11 @@
     "node": {
       "context": "node",
       "engines": {
-        "node": "15"
+        "node": "14"
       },
       "distDir": ".",
       "includeNodeModules": false,
-      "outputFormat": "esmodule"
+      "outputFormat": "commonjs"
     }
   },
   "dependencies": {
