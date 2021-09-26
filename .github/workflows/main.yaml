@@ -37,6 +37,7 @@ jobs:
           npm run build
           touch ./build/.nojekyll
         env:
+          APP_NAME: 2021-09-mdx-test
           app_id_prod: ${{ secrets.APP_ID_PROD }}
           app_key_prod: ${{ secrets.APP_KEY_PROD }}
 
