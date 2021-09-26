@@ -1,0 +1,15 @@
+:root {
+  /* main color */
+  --yle-turquoise: rgb(2, 180, 200);
+
+  /* highlight color */
+  --yle-red: rgb(255, 77, 91);
+
+  /* additional colors */
+  --yle-orange: rgb(255, 141, 52);
+  --yle-light-blue: rgb(0, 179, 234);
+  --yle-yellow: rgb(255, 229, 54);
+  --yle-blue: rgb(42, 117, 208);
+  --yle-green: rgb(128, 200, 0);
+  --yle-dark-red: rgb(248, 56, 7);
+}

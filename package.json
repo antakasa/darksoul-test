@@ -14,7 +14,7 @@
     "externalContent": false
   },
   "scripts": {
-    "start": "cross-var cross-env NODE_ENV=development APP_NAME=$npm_package_name parcel *.html",
+    "start": "cross-var cross-env NODE_ENV=development APP_NAME=$npm_package_name WATCHING=D parcel *.html",
     "gitrepo": "cross-var hub create -p Yleisradio/lusi-dataviz-$npm_package_name",
     "confgenerate": "dataviz-deploy generate --dir build --exclude *.es6.js",
     "createhtml": "parcel watch createHTML.js --target node",
@@ -29,23 +29,29 @@
     "node": "14"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-object-rest-spread": "^7.15.6",
+    "@babel/plugin-proposal-optional-chaining": "^7.14.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-react": "^7.14.5",
     "@mdx-js/react": "^1.0.0",
+    "@parcel/babel-plugin-transform-runtime": "^2.0.0-nightly.1823",
+    "@parcel/babel-preset-env": "^2.0.0-alpha.3",
     "@parcel/transformer-image": "^2.0.0-rc.0",
     "@parcel/transformer-mdx": "^2.0.0-rc.0",
     "@parcel/transformer-sass": "^2.0.0-rc.0",
     "autoprefixer": "^10.3.2",
+    "babel-plugin-styled-components": "^1.13.2",
     "cross-env": "^5.2.1",
     "cross-var": "^1.1.0",
     "parcel": "^2.0.0-rc.0",
-    "parcel-reporter-runcreatehtml": "file:plugins/parcel-reporter-runcreatehtml",
     "parcel-namer-es6": "file:plugins/parcel-namer-es6",
+    "parcel-reporter-runcreatehtml": "file:plugins/parcel-reporter-runcreatehtml",
+    "parcel-transformer-mdx-frontmatter": "file:plugins/parcel-transformer-mdx-frontmatter",
     "postcss": "^8.3.6",
     "postcss-prefix-selector": "^1.12.0",
     "posthtml": "^0.16.5",
     "posthtml-expressions": "^1.9.0",
     "prettier": "^2.4.1",
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0",
     "rimraf": "^3.0.2"
   },
   "targets": {
@@ -64,11 +70,22 @@
     "node": {
       "context": "node",
       "engines": {
-        "node": "14"
+        "node": "15"
       },
       "distDir": ".",
-      "outputFormat": "commonjs"
+      "includeNodeModules": false,
+      "outputFormat": "esmodule"
     }
   },
-  "dependencies": {}
+  "dependencies": {
+    "@node-minify/core": "^6.2.0",
+    "@node-minify/html-minifier": "^6.2.0",
+    "markdown-to-jsx": "^7.1.3",
+    "node-fetch": "^2.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "stringify-object": "^4.0.0",
+    "styled-components": "^5.3.1"
+  }
 }

@@ -1,0 +1,8 @@
+.yle {
+  &__app {
+    > ^&__navigation {
+      display: none;
+      margin-bottom: 0;
+    }
+  }
+}

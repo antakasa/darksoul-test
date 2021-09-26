@@ -45,7 +45,7 @@ if (process.env.NODE_ENV === 'production' && window.yleVisualisation) {
   // ARTICLE RENDERER OR STATIC HOSTING
   eventHandlers.onMount(appName, document.body, plusAppMethods);
   window.plusApp = window.plusApp || {};
-} else if (process.env.NODE_ENV === 'development') {
+} else if (process.env.NODE_ENV === 'development' || window.location.href.indexOf("lusi-dataviz.ylestatic.fi") != -1 || window.location.href.indexOf("lusi-dataviz.test.ylestatic.fi") != -1) {
   const root = document.querySelector(ROOT_SELECTOR);
   const parameters = {};
   const searchParameters = new URLSearchParams(window.location.search);

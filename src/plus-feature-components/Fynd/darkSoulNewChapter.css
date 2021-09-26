@@ -1,0 +1,15 @@
+ @-moz-document url-prefix() {
+    p[data-paragraph-id="aloitus"]::first-letter {
+        margin-top: 14px!important;
+    }
+  }
+
+p[data-paragraph-id="aloitus"]::first-letter {
+    float: left;
+    font-size: 520%;
+    line-height: 1;
+    margin-top: -8px;
+    margin-bottom: -10px;
+    padding-right: 10px;
+    padding-left: 3px;
+}

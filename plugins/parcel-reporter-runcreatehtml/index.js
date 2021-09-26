@@ -3,10 +3,9 @@ const { exec } = require("child_process");
 
 module.exports = new Reporter ({
   async report ({event}) {
+    if (event.type === 'buildSuccess' &&  process.env.npm_lifecycle_event !== "start") {
     
-    if (event.type === 'buildSuccess') {
-      return null
-      exec("node createHTML-build.js", (error, stdout, stderr) => {
+      exec("node -r dotenv/config createHTML-build.js", (error, stdout, stderr) => {
         if (error) {
             console.log(`error: ${error.message}`);
             return;

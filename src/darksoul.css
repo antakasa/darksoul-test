@@ -1,0 +1,322 @@
+/* eb-garamond-regular - latin */
+@font-face {
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('https://lusi-dataviz.ylestatic.fi/2020-11-featurepohja/fynd/eb-garamond-v15-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('https://lusi-dataviz.ylestatic.fi/2020-11-featurepohja/fynd/eb-garamond-v15-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* eb-garamond-600 - latin */
+  @font-face {
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('https://lusi-dataviz.ylestatic.fi/2020-11-featurepohja/fynd/eb-garamond-v15-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('https://lusi-dataviz.ylestatic.fi/2020-11-featurepohja/fynd/eb-garamond-v15-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+
+    #app {
+        font-family: 'EB Garamond';
+        background: black;
+        color: white;
+        font-size: 22px;
+        box-sizing: initial !important;
+        -webkit-font-smoothing: auto; 
+        font-smooth: auto;
+        margin-bottom: 1em;
+        padding-bottom: 20px;
+    }
+    
+
+* {
+    box-sizing: content-box;
+    margin: revert;
+    padding: revert;
+    box-sizing: inherit;
+}
+    article {
+        visibility: initial;
+    }
+
+
+
+@media (prefers-color-scheme: dark){
+    body, p.fynd{
+        background: black;
+        color: white;
+    }
+    h4[class*='HeaderLead'] {
+        color: white;
+    }
+
+    p[class*='AuthorContent'] {
+        color: white;
+    }
+    
+        
+}
+/* NÄMÄ ON SIIRRETY darkSoulNewChapter komponenttiin /*
+/*ff korjaus anfangille*/
+/* @-moz-document url-prefix() {
+    p[data-paragraph-id="aloitus"]::first-letter {
+        margin-top: 14px!important;
+    }
+  }
+
+p[data-paragraph-id="aloitus"]::first-letter {
+    float: left;
+    font-size: 520%;
+    line-height: 1;
+    margin-top: -8px;
+    margin-bottom: -10px;
+    padding-right: 10px;
+    padding-left: 3px;
+} */
+
+
+figure#plus-featurepohja-fynd-scrolling-video {
+    margin-top: 0px !important;
+}
+
+
+figure#plus-featurepohja-fynd-tekijatboksi, .tekijatboksi {
+    max-width: 700px;
+    margin: 1.3em auto !important;
+    line-height: 1.5;
+    padding: 0 15px;
+    font-size: 22px;
+    font-family: 'EB Garamond';
+}
+
+.tekijatboksi.centered {
+    text-align: center;
+}
+
+/*kuvatekstit*/
+[data-type="kuva"] p{
+    color: #bebebe;
+    font-size: 18px;
+    text-align: center;
+    border: unset;
+}
+
+p[data-paragraph-foo="spacetop"].fynd  {
+    margin-top: 75px!important;
+}
+p[data-paragraph-foo="spacebottom"].fynd  {
+    margin-bottom: 75px!important;
+}
+
+/*ingressi*/
+div[class*='LeadContainer'] h4{
+    margin-top: 300px;
+    margin-bottom: 150px;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 1;
+        font-family: 'EB Garamond';
+}
+
+/*muuttaa ingressin tekijä+someboksin jälkeen*/
+div[class*='LeadContainer'] {
+    display: flex;
+    background-color: rgba(0,0,0,0);
+    flex-direction: column;
+}
+
+p[class*='SharedVisualStylesstyled__Text'] {
+    border-bottom: 0;
+}
+
+div[class*='ShareButton-']::before {
+    font-weight: bold;
+    color: white;
+    content: "Jaa artikkeli:";
+    font-family: 'EB Garamond';
+    display: flex;
+    /* justify-content: center; */
+    margin-bottom: 10px;
+  }
+
+  nav[class*='ShareNavi'] {
+    left: 40px;
+    top: 10px;
+  }
+
+  nav[class*='ShareNavi'] ul  {
+      padding-inline-start: 10px; 
+  }
+
+  h4[class*="AuthorBoxstyled__Title"] {
+      display: none;
+  }
+
+button[class*='ShareButton-'] {
+    margin: unset;
+    border: 3px solid white;
+}
+
+div[class*='ShareButtonsContainer'] {
+display: flex;
+flex-direction: column;
+}
+
+div[class*='AuthorBoxstyled'] p span {
+    padding: unset;
+    margin: unset;
+    font-family: 'EB Garamond' !important;
+    font-size: 16px;
+}
+
+div[class*='AuthorBoxstyled'] {
+    padding: unset;
+    margin: unset;
+}
+
+
+div[class*='AuthorContainer'] {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    }
+
+    h1[class*='HeaderTitle'] {
+        display: none;
+    }
+    
+/*tekijät fontti isommaksi*/
+p[class*='AuthorContent'] {
+    font-size: 18px;
+    margin-bottom: 0;
+    color: #bebebe;
+    text-align: center;
+}
+
+/*keskitys*/
+p[data-paragraph-id="center"] {
+    text-align: center;
+    line-height: 40%;
+}
+
+/*linkki*/
+.fynd a {
+    color: white;
+    font-style: normal; 
+}
+
+figure {
+    margin: 0;
+}
+
+body {
+/* needed for fynd */
+    line-height: unset;
+}
+
+video::-internal-media-controls-overlay-cast-button {
+    display: none;
+}
+
+p[data-paragraph-id="sourcelist"].fynd {
+    color: #bebebe;
+    font-size: 18px;
+    line-height: normal;
+}
+
+#sources .yle__article__paragraph.fynd {
+    color: #bebebe;
+    font-size: 18px;
+    line-height: normal;    
+}
+
+/*lisää väliä kappaleiden ja tekstin väliin*/
+.yle__article__paragraph.fynd{
+    max-width: 700px;
+    margin: 1.3em auto !important;
+    line-height: 1.5;
+    padding: 0 15px;
+    font-size: 22px;
+}
+
+/*kuvat leväksi mobiilissa*/
+[data-type="kuva"]{
+    /*width: calc(100% - 1px);*/
+    width: 100%;
+    margin-left: 0;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+/* LOADING-JUTUT*/
+
+.feature-loading.background {
+    /* koko screenin fixed tausta*/
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    top: 0;
+    left: 0;
+}
+
+.feature-loading-logo-background {
+    /* loadingkuvan taustalaatikko*/
+    background: black;
+    position: absolute;
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+.feature-loading-logo {
+    /* loadingkuva*/
+    width: calc(100% - 6em);
+    max-width: 200px;
+    padding: 3em;
+    height: auto;
+    animation:spin 3s linear infinite;
+}
+
+@keyframes spin { 100% { transform:rotateY(360deg); } }
+
+.feature-loading.feature-loading-text {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    
+}
+
+.stop-scrolling {
+    /* skrollauksen esto, tämä lisätään bodyyn kun ladataan*/
+    height: 100%;
+    overflow: hidden;
+  }
+
+
+
+
+.loading-hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.2s, opacity 0.2s ease-out;
+  }
+
+  /*lopun KC-logo*/
+[data-type="kuva1"] img {
+    width: 20%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}

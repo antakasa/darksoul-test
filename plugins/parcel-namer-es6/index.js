@@ -20,8 +20,11 @@ const isEsModule = (bundle) =>
 
 module.exports = new Namer({
   async name({ bundle, bundleGraph, logger, options }) {
+    if(typeof bundle.getMainEntry() === "undefined") return null 
     if (getFileName(bundle, options.projectRoot) === "createHTML") {
-      return "createHTML-build.js"}
+      return "createHTML-build.js"
+    }
+    
     return bundle.type === 'js' 
       ? createJSFileName({
           name: getFileName(bundle, options.projectRoot),

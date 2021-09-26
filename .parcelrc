@@ -1,5 +1,21 @@
 {
   "extends": "@parcel/config-default",
-  "namers": [ "parcel-namer-es6" , "..."],
-  "reporters": [ "parcel-reporter-runcreatehtml" , "..."]
+  "namers": [
+    "parcel-namer-es6",
+    "..."
+  ],
+  "transformers": {
+    "*.mdx": [
+      "parcel-transformer-mdx-frontmatter",
+      "..."
+    ],
+    "*.md": [
+      "parcel-transformer-mdx-frontmatter",
+      "@parcel/transformer-mdx"
+    ]
+  },
+  "reporters": [
+    "parcel-reporter-runcreatehtml",
+    "..."
+  ]
 }
