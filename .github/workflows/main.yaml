@@ -40,9 +40,10 @@ jobs:
       # Build the project and add .nojekyll file to supress default behaviour
       - name: Build
         run: |
+          node --version
           npm run build
           touch ./build/.nojekyll
-          node -r dotenv/config createHTML-build.js
+
     
       # Push to your pages repo
       - name: Push to pages repo
