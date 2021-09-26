@@ -308,7 +308,7 @@ p[data-paragraph-id="sourcelist"].fynd {
 .loading-hidden {
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s 0.2s, opacity 0.2s ease-out;
+    /* transition: visibility 0s 0.2s, opacity 0.2s ease-out; */
   }
 
   /*lopun KC-logo*/
