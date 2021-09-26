@@ -23,13 +23,11 @@ otsikonSisalto: '[data-type="scrolling-video1"]'
 
 <DarkSoulShareButtons centered iconColor="white" />
 
-
 <AuthorBox
     centered
     title="Tekijät"
     authorText="<span>Julkaistu: **18.5.2021**. Teksti: **Jantso Jokelin**. Editointi: **Teemu Laaksonen**. Ulkoasu: **Hannes Nissinen**, **Antti Ollikainen**. Koodi: **Antti Saarenpää**, **Annika Veteli**</span>"
   />
-
 
 <DarkSoulSubheader disableScroll header={"Fire"} number="I" />
 

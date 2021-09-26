@@ -5,3 +5,10 @@ node_modules
 .DS_Store
 build
 .env
+createHTML.css
+createHTML.css.map
+createHTML-build.css
+createHTML-build.css.map
+createHTML-build.js
+createHTML-build.js.map
+

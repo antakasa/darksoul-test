@@ -15,7 +15,6 @@ if (!globalThis.fetch) {
 
 const sheet = new ServerStyleSheet();
 
-
 const cssImports = `<style>
 @import "./src/basics.css";
 @import "./src/styles.css";
