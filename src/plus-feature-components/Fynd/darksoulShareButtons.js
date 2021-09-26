@@ -1,5 +1,5 @@
 import React from 'react'; 
-import "./darksoulShareButtons.css"
+import "./darkSoulShareButtons.css"
 
 
 function Twitter(props) {

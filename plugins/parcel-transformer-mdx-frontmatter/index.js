@@ -16,7 +16,6 @@ module.exports = new Transformer({
       ${content}`
   
       asset.setCode(frontmattered);
-      console.log(await asset.getCode())
       return [asset];
       }
 

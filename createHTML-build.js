@@ -500,7 +500,7 @@ var htmlMinifier = require("@node-minify/html-minifier");
 if (!globalThis.fetch) globalThis.fetch = _nodeFetch.default;
 var sheet = new _styledComponents.ServerStyleSheet();
 var markup = function markup1(initialData, styleTags, html) {
-    return "<!DOCTYPE html>\n<html lang=\"fi\">\n\t<head>\n\t\t<meta charset=\"UTF-8\" />\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n\t\t<meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\" />\n\t\t<title>Demo page</title>\n\t</head>\n\t<body>".concat(styleTags).concat(initialData, "\n\t\t<div id=\"app\" class=\"ist\" data-yle-vis-id=\"").concat(_package.default.name, "\">").concat(html, "</div>\n\t\t<script src=\"./index.js\" type=\"module\"></script>\n\t</body>\n</html>");
+    return "<!DOCTYPE html>\n<html lang=\"fi\">\n\t<head>\n\t\t<meta charset=\"UTF-8\" />\n    <meta name=\"robots\" content=\"noindex, nofollow\" />\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n\t\t<meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\" />\n\t\t<title>Demo page</title>\n\t</head>\n\t<body>".concat(styleTags).concat(initialData, "\n\t\t<div id=\"app\" class=\"ist\" data-yle-vis-id=\"").concat(_package.default.name, "\">").concat(html, "</div>\n\t\t<script src=\"./index.js\" type=\"module\"></script>\n\t</body>\n</html>");
 };
 render();
 function render() {
@@ -530,7 +530,7 @@ function _render() {
                         value: contextValue
                     }, /*#__PURE__*/ _react.default.createElement(_App.App, null))));
                     styleTags = sheet.getStyleTags();
-                    outputFile = "./output.html";
+                    outputFile = "./darksoul.html";
                     fs.writeFileSync(outputFile, markup(initialData, styleTags, html));
                     console.log("Wrote ".concat(outputFile));
                     _context.next = 18;
@@ -562,7 +562,7 @@ function _render() {
 
 },{"./package.json":"B5dR2","./src/App":"l9sPX","./Context":"2nNza"}],"B5dR2":[function(require,module,exports) {
 "use strict";
-module.exports = JSON.parse("{\"name\":\"2021-09-mdx-test\",\"license\":\"MIT\",\"browserslist\":[\">0.25% in FI\",\"last 1 chrome version\",\"last 1 firefox version\",\"Firefox ESR\",\"not op_mini all\",\"not dead\"],\"private\":true,\"yleDataviz\":{\"externalContent\":false},\"scripts\":{\"start\":\"cross-var cross-env NODE_ENV=development APP_NAME=$npm_package_name WATCHING=D parcel *.html\",\"gitrepo\":\"cross-var hub create -p Yleisradio/lusi-dataviz-$npm_package_name\",\"confgenerate\":\"dataviz-deploy generate --dir build --exclude *.es6.js\",\"createhtml\":\"parcel watch createHTML.js --target node\",\"deploy\":\"npm run build && dataviz-deploy sync lusi $npm_package_name && cross-var echo \\\"https://lusi-dataviz.ylestatic.fi/$npm_package_name\\\"\",\"deploy:test\":\"npm run build:test && dataviz-deploy sync lusi-test $npm_package_name && cross-var echo \\\"https://lusi-dataviz.test.ylestatic.fi/$npm_package_name\\\"\",\"build\":\"cross-var cross-env NODE_ENV=production APP_NAME=$npm_package_name parcel build index.html --target legacy --public-url https://antakasa.github.io/astro-test-gh/\",\"build:test\":\"cross-var cross-env NODE_ENV=production APP_NAME=$npm_package_name parcel build index.html --public-url https://lusi-dataviz.test.ylestatic.fi/$npm_package_name/\",\"prebuild\":\"rimraf build\",\"prebuild:test\":\"rimraf build\"},\"engines\":{\"node\":\"14\"},\"devDependencies\":{\"@babel/plugin-proposal-object-rest-spread\":\"^7.15.6\",\"@babel/plugin-proposal-optional-chaining\":\"^7.14.5\",\"@babel/preset-env\":\"^7.15.6\",\"@babel/preset-react\":\"^7.14.5\",\"@mdx-js/react\":\"^1.0.0\",\"@parcel/babel-plugin-transform-runtime\":\"^2.0.0-nightly.1823\",\"@parcel/babel-preset-env\":\"^2.0.0-alpha.3\",\"@parcel/transformer-image\":\"^2.0.0-rc.0\",\"@parcel/transformer-mdx\":\"^2.0.0-rc.0\",\"@parcel/transformer-sass\":\"^2.0.0-rc.0\",\"autoprefixer\":\"^10.3.2\",\"babel-plugin-styled-components\":\"^1.13.2\",\"cross-env\":\"^5.2.1\",\"cross-var\":\"^1.1.0\",\"parcel\":\"^2.0.0-rc.0\",\"parcel-namer-es6\":\"file:plugins/parcel-namer-es6\",\"parcel-reporter-runcreatehtml\":\"file:plugins/parcel-reporter-runcreatehtml\",\"parcel-transformer-mdx-frontmatter\":\"file:plugins/parcel-transformer-mdx-frontmatter\",\"postcss\":\"^8.3.6\",\"postcss-prefix-selector\":\"^1.12.0\",\"posthtml\":\"^0.16.5\",\"posthtml-expressions\":\"^1.9.0\",\"prettier\":\"^2.4.1\",\"rimraf\":\"^3.0.2\"},\"targets\":{\"legacy\":{\"includeNodeModules\":true,\"distDir\":\"./build\",\"engines\":{\"browsers\":\"> 0.5%, last 2 versions, not dead\"}},\"default\":{\"context\":\"browser\",\"distDir\":\"./build\",\"includeNodeModules\":true},\"node\":{\"context\":\"node\",\"engines\":{\"node\":\"15\"},\"distDir\":\".\",\"includeNodeModules\":false,\"outputFormat\":\"esmodule\"}},\"dependencies\":{\"@node-minify/core\":\"^6.2.0\",\"@node-minify/html-minifier\":\"^6.2.0\",\"markdown-to-jsx\":\"^7.1.3\",\"node-fetch\":\"^2.0.0\",\"prop-types\":\"^15.7.2\",\"react\":\"^17.0.2\",\"react-dom\":\"^17.0.2\",\"stringify-object\":\"^4.0.0\",\"styled-components\":\"^5.3.1\"}}");
+module.exports = JSON.parse("{\"name\":\"2021-09-mdx-test\",\"license\":\"MIT\",\"browserslist\":[\">0.25% in FI\",\"last 1 chrome version\",\"last 1 firefox version\",\"Firefox ESR\",\"not op_mini all\",\"not dead\"],\"private\":true,\"yleDataviz\":{\"externalContent\":false},\"scripts\":{\"start\":\"cross-var cross-env NODE_ENV=development APP_NAME=$npm_package_name WATCHING=D parcel *.html\",\"gitrepo\":\"cross-var hub create -p Yleisradio/lusi-dataviz-$npm_package_name\",\"confgenerate\":\"dataviz-deploy generate --dir build --exclude *.es6.js\",\"createhtml\":\"parcel watch createHTML.js --target node\",\"deploy\":\"npm run build && dataviz-deploy sync lusi $npm_package_name && cross-var echo \\\"https://lusi-dataviz.ylestatic.fi/$npm_package_name\\\"\",\"deploy:test\":\"npm run build:test && dataviz-deploy sync lusi-test $npm_package_name && cross-var echo \\\"https://lusi-dataviz.test.ylestatic.fi/$npm_package_name\\\"\",\"build\":\"cross-var cross-env NODE_ENV=production APP_NAME=$npm_package_name parcel build createHTML.js --target node && parcel build *.html --target legacy --public-url https://antakasa.github.io/astro-test-gh/\",\"build:test\":\"cross-var cross-env NODE_ENV=production APP_NAME=$npm_package_name parcel build index.html --public-url https://lusi-dataviz.test.ylestatic.fi/$npm_package_name/\",\"prebuild\":\"rimraf build\",\"prebuild:test\":\"rimraf build\"},\"engines\":{\"node\":\"14\"},\"devDependencies\":{\"@babel/plugin-proposal-object-rest-spread\":\"^7.15.6\",\"@babel/plugin-proposal-optional-chaining\":\"^7.14.5\",\"@babel/preset-env\":\"^7.15.6\",\"@babel/preset-react\":\"^7.14.5\",\"@mdx-js/react\":\"^1.0.0\",\"@parcel/babel-plugin-transform-runtime\":\"^2.0.0-nightly.1823\",\"@parcel/babel-preset-env\":\"^2.0.0-alpha.3\",\"@parcel/transformer-image\":\"^2.0.0-rc.0\",\"@parcel/transformer-mdx\":\"^2.0.0-rc.0\",\"@parcel/transformer-sass\":\"^2.0.0-rc.0\",\"autoprefixer\":\"^10.3.2\",\"babel-plugin-styled-components\":\"^1.13.2\",\"cross-env\":\"^5.2.1\",\"cross-var\":\"^1.1.0\",\"parcel\":\"^2.0.0-rc.0\",\"parcel-namer-es6\":\"file:plugins/parcel-namer-es6\",\"parcel-reporter-runcreatehtml\":\"file:plugins/parcel-reporter-runcreatehtml\",\"parcel-transformer-mdx-frontmatter\":\"file:plugins/parcel-transformer-mdx-frontmatter\",\"postcss\":\"^8.3.6\",\"postcss-prefix-selector\":\"^1.12.0\",\"posthtml\":\"^0.16.5\",\"posthtml-expressions\":\"^1.9.0\",\"prettier\":\"^2.4.1\",\"rimraf\":\"^3.0.2\"},\"targets\":{\"legacy\":{\"includeNodeModules\":true,\"distDir\":\"./build\",\"engines\":{\"browsers\":\"> 0.5%, last 2 versions, not dead\"}},\"default\":{\"context\":\"browser\",\"distDir\":\"./build\",\"includeNodeModules\":true},\"node\":{\"context\":\"node\",\"engines\":{\"node\":\"15\"},\"distDir\":\".\",\"includeNodeModules\":false,\"outputFormat\":\"esmodule\"}},\"dependencies\":{\"@node-minify/core\":\"^6.2.0\",\"@node-minify/html-minifier\":\"^6.2.0\",\"markdown-to-jsx\":\"^7.1.3\",\"node-fetch\":\"^2.0.0\",\"prop-types\":\"^15.7.2\",\"react\":\"^17.0.2\",\"react-dom\":\"^17.0.2\",\"stringify-object\":\"^4.0.0\",\"styled-components\":\"^5.3.1\"}}");
 
 },{}],"l9sPX":[function(require,module,exports) {
 "use strict";
@@ -580,7 +580,6 @@ var _asyncToGenerator2 = _interopRequireDefault(require("@babel/runtime/helpers/
 var _slicedToArray2 = _interopRequireDefault(require("@babel/runtime/helpers/slicedToArray"));
 var _react = _interopRequireWildcard(require("react"));
 var _react2 = require("@mdx-js/react");
-var _Content = _interopRequireDefault(require("./Content.mdx"));
 var _darksoul = _interopRequireDefault(require("./darksoul.md"));
 var _SubHeader = require("./SubHeader");
 var _server = _interopRequireDefault(require("react-dom/server"));
@@ -655,7 +654,6 @@ function _objectSpread(target) {
     }
     return target;
 }
-console.log(_darksoul.default);
 var useServerEffect = function useServerEffect1(_ref) {
     var key = _ref.key, effect = _ref.effect;
     // This is nothing more than a PictureTag from Plus-feature
@@ -699,7 +697,6 @@ var DataProvider = function DataProvider1(props) {
         key: props.id,
         effect: effect
     });
-    console.log(props);
     if (props.children) return data && props.children(data);
     return data;
 };
@@ -773,8 +770,7 @@ var components = {
     },
     LahdeLuettelo: _darksoulSourceList.DarksoulSourceList,
     Skrolli: function Skrolli(props) {
-        if (!Array.isArray(props.children)) return null;
-        console.log(props.tyylit); // DataProvider gets IMS data etc. for every child elemet <Object>. We also extend every child with style property
+        if (!Array.isArray(props.children)) return null; // DataProvider gets IMS data etc. for every child elemet <Object>. We also extend every child with style property
         var datas = props.children.map(function(e) {
             return DataProvider(_objectSpread(_objectSpread({
             }, e), {
@@ -809,51 +805,7 @@ var App = function App1() {
 };
 exports.App = App;
 
-},{"./Content.mdx":"jnco6","./SubHeader":"8O2WD","./plus-feature-components/Header/Header":"2SNCW","./basics.css":"lgSAr","./styles.css":"6xvMG","./variables.css":"iWQvO","./yle.css":"69fjZ","./plus-feature-components/Fynd/darkSoulHeroText":"8Wz8L","./plus-feature-components/Fynd/scrollingVideo":"giCOI","./plus-feature-components/Fynd/darksoulShareButtons":"alsUl","./plus-feature-components/AuthorBox/AuthorBox":"7tPSL","./plus-feature-components/Fynd/darkSoulSubheader":"cVMnU","./plus-feature-components/VisualComponents/Picture/PictureTag":"6X7Hf","./lib/dataHandleFunctions":"gKZyW","../Context":"2nNza","./plus-feature-components/Scrolly/Scrolly":"9GYPM","./plus-feature-components/Fynd/darkSoulNewChapter":"45X8b","./plus-feature-components/Fynd/darksoulSourceList":"hdp3E","./darksoul.md":"i3VQM"}],"jnco6":[function(require,module,exports) {
-"use strict";
-var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = MDXContent;
-exports.frontMatter = void 0;
-var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/extends"));
-var _objectWithoutProperties2 = _interopRequireDefault(require("@babel/runtime/helpers/objectWithoutProperties"));
-var _react = _interopRequireDefault(require("react"));
-var _react2 = require("@mdx-js/react");
-var _excluded = [
-    "components"
-];
-/* @jsxRuntime classic */ /* @jsx mdx */ var frontMatter = {
-    hello: 'jepulisjepjep',
-    test: 'tämä toimii aivan perkeleen hyvin huhuhuhuhuhuhuh'
-};
-exports.frontMatter = frontMatter;
-var makeShortcode = function makeShortcode1(name) {
-    return function MDXDefaultShortcode(props) {
-        console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
-        return _react2.mdx("div", props);
-    };
-};
-var SubHeader = makeShortcode("SubHeader");
-var layoutProps = {
-    frontMatter: frontMatter
-};
-var MDXLayout = "wrapper";
-function MDXContent(_ref) {
-    var components = _ref.components, props = _objectWithoutProperties2.default(_ref, _excluded);
-    return _react2.mdx(MDXLayout, _extends2.default({
-    }, layoutProps, props, {
-        components: components,
-        mdxType: "MDXLayout"
-    }), _react2.mdx("p", null, "const testvar = \"hetttt\";"), _react2.mdx("h1", null, "Hello, world!"), _react2.mdx(SubHeader, {
-        test: "\xF6k\xF6lkl\xF6kagsdgasd",
-        mdxType: "SubHeader"
-    }), _react2.mdx("p", null, "This is MDX!fdsdddffdwrwreasdfasdf "));
-}
-MDXContent.isMDXComponent = true;
-
-},{}],"8O2WD":[function(require,module,exports) {
+},{"./SubHeader":"8O2WD","./plus-feature-components/Header/Header":"2SNCW","./basics.css":"lgSAr","./styles.css":"6xvMG","./variables.css":"iWQvO","./yle.css":"69fjZ","./plus-feature-components/Fynd/darkSoulHeroText":"8Wz8L","./plus-feature-components/Fynd/scrollingVideo":"giCOI","./plus-feature-components/Fynd/darksoulShareButtons":"alsUl","./plus-feature-components/AuthorBox/AuthorBox":"7tPSL","./plus-feature-components/Fynd/darkSoulSubheader":"cVMnU","./plus-feature-components/VisualComponents/Picture/PictureTag":"6X7Hf","./lib/dataHandleFunctions":"gKZyW","../Context":"2nNza","./plus-feature-components/Scrolly/Scrolly":"9GYPM","./plus-feature-components/Fynd/darkSoulNewChapter":"45X8b","./plus-feature-components/Fynd/darksoulSourceList":"hdp3E","./darksoul.md":"i3VQM"}],"8O2WD":[function(require,module,exports) {
 "use strict";
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 Object.defineProperty(exports, "__esModule", {
@@ -3626,7 +3578,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.DarkSoulShareButtons = void 0;
 var _react = _interopRequireDefault(require("react"));
-require("./darksoulShareButtons.css");
+require("./darkSoulShareButtons.css");
 function Twitter(props) {
     var fill = props.fill;
     return(/*#__PURE__*/ _react.default.createElement("svg", {
@@ -3706,7 +3658,7 @@ var DarkSoulShareButtons = function DarkSoulShareButtons1(props) {
 };
 exports.DarkSoulShareButtons = DarkSoulShareButtons;
 
-},{"./darksoulShareButtons.css":"fPl6T"}],"fPl6T":[function() {},{}],"7tPSL":[function(require,module,exports) {
+},{"./darkSoulShareButtons.css":"fPl6T"}],"fPl6T":[function() {},{}],"7tPSL":[function(require,module,exports) {
 "use strict";
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 var _typeof = require("@babel/runtime/helpers/typeof");

@@ -30,6 +30,13 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Create env file
+        run: |
+          touch .env
+          echo APP_ID_PROD=${{ secrets.APP_ID_PROD }}>> .env
+          echo APP_KEY_PROD=${{ secrets.APP_KEY_PROD }} >> .env
+          cat .env
+
       # Build the project and add .nojekyll file to supress default behaviour
       - name: Build
         run: |
