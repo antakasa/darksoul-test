@@ -16,11 +16,11 @@ if (!globalThis.fetch) {
 const sheet = new ServerStyleSheet();
 
 const cssImports = `<style>
-@import "./src/basics.css";
-@import "./src/styles.css";
-@import "./src/variables.css";
-@import "./src/yle.css";
-@import "./src/authorsAndShareButtons.css";
+@import "./src/plus-feature-components/basics.css";
+@import "./src/plus-feature-components/styles.css";
+@import "./src/plus-feature-components/variables.css";
+@import "./src/plus-feature-components/yle.css";
+@import "./src/plus-feature-components/authorsAndShareButtons.css";
 @import "./src/darksoul.css";
 @import "./src/plus-feature-components/Fynd/darkSoulNewChapter.css";
 @import "./src/plus-feature-components/Fynd/darkSoulShareButtons.css";
