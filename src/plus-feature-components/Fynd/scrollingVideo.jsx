@@ -39,6 +39,9 @@ function ScrollingVideo(props) {
       }
       }
     }
+
+    
+    if(vid.readyState > 1) vid.play();
     vid.addEventListener('loadedmetadata', function () {
       // play & pause needed to make video visible in mobile devices
       if (disableScroll) {
@@ -62,6 +65,7 @@ function ScrollingVideo(props) {
       vid.pause();
       scrollPlay({ videoRef, heightSetterRef, playbackConst, limitedScrolling });
     });
+
     return () => {
       isMounted = false;
     };
