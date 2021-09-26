@@ -5,7 +5,7 @@ artikkelitausta: black
 otsikonSisalto: '[data-type="scrolling-video1"]'
 ---
 
-import "./darksoul.css";
+//import "./darksoul.css";
 import "./authorsAndShareButtons.css";
 
 <Header
