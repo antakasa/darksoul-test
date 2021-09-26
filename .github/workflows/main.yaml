@@ -42,6 +42,11 @@ jobs:
         run: |
           npm run build
           touch ./build/.nojekyll
+    
+    
+      # Install dependencies with npm
+      - name: run createhtml
+        run: node -r dotenv/config createHTML-build.js
 
       # Push to your pages repo
       - name: Push to pages repo
