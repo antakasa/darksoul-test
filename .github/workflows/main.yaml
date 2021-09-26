@@ -40,7 +40,7 @@ jobs:
           cat .env
           npm run build
           touch ./build/.nojekyll
-          node -r dotenv/config createHTML-build.js
+          node createHTML-build.js
         env:
           APP_ID_PROD: ${{ secrets.APP_ID_PROD }}
           APP_KEY_PROD: ${{ secrets.APP_KEY_PROD }}
