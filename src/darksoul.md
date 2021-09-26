@@ -5,7 +5,6 @@ artikkelitausta: black
 otsikonSisalto: '[data-type="scrolling-video1"]'
 ---
 
-import "./authorsAndShareButtons.css";
 
 <Header
   ingressi={frontMatter.ingressi}

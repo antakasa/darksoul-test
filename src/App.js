@@ -12,10 +12,6 @@ import { SubHeader } from "./SubHeader";
 
 import ReactDOMServer from "react-dom/server";
 import Header from "./plus-feature-components/Header/Header";
-import "./basics.css";
-import "./styles.css";
-import "./variables.css";
-import "./yle.css";
 import DarkSoulHeroText from "./plus-feature-components/Fynd/darkSoulHeroText";
 import ScrollingVideo from "./plus-feature-components/Fynd/scrollingVideo";
 import { DarkSoulShareButtons } from "./plus-feature-components/Fynd/darksoulShareButtons";

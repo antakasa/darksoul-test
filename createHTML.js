@@ -15,7 +15,19 @@ if (!globalThis.fetch) {
 
 const sheet = new ServerStyleSheet();
 
-const markup = (initialData, styleTags, html) => `<!DOCTYPE html>
+
+const cssImports = `<style>
+@import "./src/basics.css";
+@import "./src/styles.css";
+@import "./src/variables.css";
+@import "./src/yle.css";
+@import "./src/authorsAndShareButtons.css";
+@import "./src/darksoul.css";
+@import "./src/plus-feature-components/Fynd/darkSoulNewChapter.css";
+@import "./src/plus-feature-components/Fynd/darkSoulShareButtons.css";
+</style>
+`
+const markup = (cssImports, initialData, styleTags, html) => `<!DOCTYPE html>
 <html lang="fi">
 	<head>
 		<meta charset="UTF-8" />
@@ -24,7 +36,8 @@ const markup = (initialData, styleTags, html) => `<!DOCTYPE html>
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>Demo page</title>
 	</head>
-	<body>${styleTags}${initialData}
+	<body>
+  ${cssImports} ${styleTags}${initialData}
 		<div id="app" class="ist" data-yle-vis-id="${pkg.name}">${html}</div>
 		<script src="./index.js" type="module"></script>
 	</body>
@@ -58,7 +71,7 @@ async function render() {
     );
     const styleTags = sheet.getStyleTags(); 
     let outputFile = "./darksoul.html";
-    fs.writeFileSync(outputFile, markup(initialData, styleTags, html));
+    fs.writeFileSync(outputFile, markup(cssImports, initialData, styleTags, html));
     console.log(`Wrote ${outputFile}`);
   } catch (error) {
     // handle error
