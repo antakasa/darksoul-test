@@ -63,7 +63,7 @@ The reason for this progress is revealed only after thousands of moments of suff
 
 <DarkSoulSubheader disableScroll header="Cycle" number="II" />
 
-<AloitusKappale> Dark Souls allows the player to live through an entire myth. Released by the Japanese company FromSoftware in 2011, the game rewrites pagan creation myths, incorporating elements of Eastern belief systems, Christian mysticism, philosophy and alchemy. In fact, nothing in the game’s world stems from an earthly perspective. At stake are our souls, humanity itself, the rocking of the very foundations of existence.</AloitusKappale>
+<AloitusKappale> Testttttt Dark Souls allows the player to live through an entire myth. Released by the Japanese company FromSoftware in 2011, the game rewrites pagan creation myths, incorporating elements of Eastern belief systems, Christian mysticism, philosophy and alchemy. In fact, nothing in the game’s world stems from an earthly perspective. At stake are our souls, humanity itself, the rocking of the very foundations of existence.</AloitusKappale>
 
 Alongside other commercial video games, Dark Souls feels like an almost impossible curiosity. It does not follow the Western traditions of storytelling with regard to narrative, history, spiritual growth and human capabilities. The player is not taught anything. We do not have the mental faculties to comprehend what is good and what is bad. History repeats itself, the human part is that of the jester.
 
@@ -86,7 +86,7 @@ This is not about reincarnation in a purely Hindu sense, about karma and being r
 
 As well as Campbell’s theories, there has been much discussion about the relationship between Dark Souls and the notion of eternal return first posited by German philosopher Friedrich Nietzsche. In his book The Gay Science (1882), Nietzsche encourages the reader to imagine a demon that creeps into our loneliest loneliness and explains that our lives will forever repeat the same way, right down to the smallest details. How should we accept this knowledge? According to the philosopher himself, we should live in such a way that we can embrace this repetition and learn to love our own destiny.
 
-We must learn to love infinite repetition if we are to understand the world of Dark Souls too. We lose often, and we must overcome the same obstacles time and time again. Experience is most beneficial to those who can successfully channel the kind of positive nihilism that Nietzsche espoused: if we can laugh, cry, and eventually say yes when the hopeless cycle starts again from the beginning.
+We must learn to love infinite repetition if we are to understand the world of Dark Souls too. We lose often, and we must overcome the same obstacles time and time again. Experience is most beneficial to those who can successfully channel the kind of positive nihilism that Nietzsche espoused: if we can laugh, cry, and eventually say yes when the hopeless cycle starts again from the beginning. 
 
 <DarkSoulSubheader disableScroll header="Rage" number="III" />
 
