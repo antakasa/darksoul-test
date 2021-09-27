@@ -14,7 +14,7 @@
     "externalContent": false
   },
   "scripts": {
-    "start": "cross-var cross-env NODE_ENV=development APP_NAME=$npm_package_name WATCHING=D parcel *.html",
+    "start": "cross-var cross-env NODE_ENV=development APP_NAME=$npm_package_name parcel *.html",
     "gitrepo": "cross-var hub create -p Yleisradio/lusi-dataviz-$npm_package_name",
     "confgenerate": "dataviz-deploy generate --dir build --exclude *.es6.js",
     "createhtml": "parcel watch createHTML.js --target node",

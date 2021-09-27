@@ -8,9 +8,10 @@ import React, {
 } from "react";
 import { MDXProvider } from "@mdx-js/react";
 import Darksoul from "./darksoul.md";
-import { SubHeader } from "./SubHeader";
 
 import ReactDOMServer from "react-dom/server";
+// Plus components
+
 import Header from "./plus-feature-components/Header/Header";
 import DarkSoulHeroText from "./plus-feature-components/Fynd/darkSoulHeroText";
 import ScrollingVideo from "./plus-feature-components/Fynd/scrollingVideo";
@@ -24,8 +25,6 @@ import Scrolly from "./plus-feature-components/Scrolly/Scrolly";
 import { DarkSoulNewChapter } from "./plus-feature-components/Fynd/darkSoulNewChapter";
 import { DarksoulSourceList } from "./plus-feature-components/Fynd/darksoulSourceList";
 const useServerEffect = ({ key, effect }) => {
-  // This is nothing more than a PictureTag from Plus-feature
-  // BUT it tries to find data that is fetched server-side
 
   const context = useContext(Context);
   const [data, setData] = useState(context[key] || null);
@@ -72,7 +71,6 @@ const DataProvider = (props) => {
 
 const components = {
   // Everything in components: <Object> is passed to MDX-file, where you can use them natively w/o importing them.
-  // This results with less code boilerplate in MDX file.
   wrapper: ({ children, ...props }) => {
     return (
       // Adds classname "yle__article__paragraph fynd" for every p-tag.
@@ -89,9 +87,7 @@ const components = {
       </>
     );
   },
-  SubHeader: SubHeader,
   Header: (props) => {
-    // We can pass simpler versions of complex components
     return (
       <Header
         articlePublishedText=""
@@ -128,7 +124,6 @@ const components = {
   DarkSoulSubheader,
   AloitusKappale: DarkSoulNewChapter,
   Kuva: (props) => (
-    // DataProvider gets IMS data etc.
     <DataProvider {...props} type="kuva">
       {(data) => (
         <PictureTag
@@ -146,7 +141,6 @@ const components = {
   LahdeLuettelo: DarksoulSourceList,
   Skrolli: (props) => {
     if (!Array.isArray(props.children)) return null;
-    // DataProvider gets IMS data etc. for every child elemet <Object>. We also extend every child with style property
     const datas = props.children.map((e) =>
       DataProvider({ ...e, style: props.tyylit })
     );
@@ -160,8 +154,6 @@ const components = {
 export const App = ({root}) => {
   if (typeof window !== "undefined") {
     // Client side
-    // We read some data from global window object.
-
     const initialData = JSON.parse(decodeURI(root.dataset.ssr));
     return (
       <Context.Provider value={initialData || {}}>
