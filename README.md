@@ -1,4 +1,4 @@
-Testiprojekti, jonka tarkoitus on testata kolmea asiaa:
+Kokeilu, jonka tarkoitus on testata kolmea asiaa:
 
  1. Plussan Feature-artikkelin kokoaminen kokonaisuudessaan yhdessä MDX-tiedostossa ```src/darksoul.md```
  2. React-toteutusen rendaaminen buildissa html:ksi ```ReactDOMServer.renderToString()```, ja clientissä hydratoiminen ```ReactDOMServer.hydrate()```. 
