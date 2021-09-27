@@ -1,5 +1,3 @@
-# Feature-artikkeli 
-
 Testiprojekti, jonka tarkoitus on testata kolmea asiaa:
 
  1. Plussan Feature-artikkelin kokoaminen kokonaisuudessaan yhdessä MDX-tiedostossa ```src/darksoul.md```
