@@ -13,7 +13,7 @@ otsikonSisalto: '[data-type="scrolling-video1"]'
 >
   <ScrollingVideo
     isHeader
-    url="https://lusi-dataviz.ylestatic.fi/2020-11-featurepohja/fynd/ds_alkuluuppi0709_ffmpeg.mp4">
+    url="https://lusi-dataviz.test.ylestatic.fi/2020-11-featurepohja/fynd/ds_alkuluuppi0709_ffmpeg.mp4">
     <DarkSoulHeroText
       text={`ON THIS PATH,<span>YOU SHALL DIE</span>`}
       isMobile={false}
@@ -60,7 +60,7 @@ The reason for this progress is revealed only after thousands of moments of suff
   <ScrollingVideo
   type="scrolling-video3"
   value="(FromSoftware)"
-  url="https://lusi-dataviz.ylestatic.fi/2020-11-featurepohja/fynd/ds_palava0709_ffmpeg.mp4"
+  url="https://lusi-dataviz.test.ylestatic.fi/2020-11-featurepohja/fynd/ds_palava0709_ffmpeg.mp4"
   />
 
 <DarkSoulSubheader disableScroll header="Cycle" number="II" />
@@ -114,7 +114,7 @@ Understanding Dark Souls becomes something of an occult process. It initiates it
   disableScroll
   type="scrolling-video"
   value="(FromSoftware)"
-  url="https://lusi-dataviz.ylestatic.fi/2020-11-featurepohja/fynd/ds_lyonti0709_ffmpeg.mp4"
+  url="https://lusi-dataviz.test.ylestatic.fi/2020-11-featurepohja/fynd/ds_lyonti0709_ffmpeg.mp4"
   />
 
 On this repeated journey, I constantly encounter other people searching for the First Flame. They lean dejectedly against walls or sit on tussocks, having finally lost all hope. In each part of the game, a crestfallen warrior is sitting beside the Firelink Shrine, having left his task unfinished. He has decided instead to be a passive observer, to watch other wanderers’ futile flailing and wait for his humanity to disappear. The love of fate has turned to bitterness. 

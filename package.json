@@ -1,5 +1,5 @@
 {
-  "name": "2021-09-mdx-test",
+  "name": "2021-ssr-react-test",
   "license": "MIT",
   "browserslist": [
     ">0.25% in FI",
@@ -18,10 +18,10 @@
     "gitrepo": "cross-var hub create -p Yleisradio/lusi-dataviz-$npm_package_name",
     "confgenerate": "dataviz-deploy generate --dir build --exclude *.es6.js",
     "createhtml": "parcel watch createHTML.js --target node",
-    "deploy": "npm run build && dataviz-deploy sync lusi $npm_package_name && cross-var echo \"https://lusi-dataviz.ylestatic.fi/$npm_package_name\"",
-    "deploy:test": "npm run build:test && dataviz-deploy sync lusi-test $npm_package_name && cross-var echo \"https://lusi-dataviz.test.ylestatic.fi/$npm_package_name\"",
+    "deploy": "npm run build && npm run confgenerate && dataviz-deploy sync lusi $npm_package_name && cross-var echo \"https://lusi-dataviz.ylestatic.fi/$npm_package_name\"",
+    "deploy:test": "npm run build:test && npm run confgenerate && dataviz-deploy sync lusi-test $npm_package_name && cross-var echo \"https://lusi-dataviz.test.ylestatic.fi/$npm_package_name\"",
     "build": "cross-var cross-env NODE_ENV=production APP_NAME=$npm_package_name parcel build createHTML.js --target node && node createHTML-build.js && parcel build *.html --target legacy --public-url https://antakasa.github.io/astro-test-gh/",
-    "build:test": "cross-var cross-env NODE_ENV=production APP_NAME=$npm_package_name parcel build index.html --public-url https://lusi-dataviz.test.ylestatic.fi/$npm_package_name/",
+    "build:test": "cross-var cross-env NODE_ENV=production APP_NAME=$npm_package_name parcel build createHTML.js --target node && cross-var cross-env NODE_ENV=production APP_NAME=$npm_package_name parcel build *.html --target legacy --public-url https://lusi-dataviz.test.ylestatic.fi/$npm_package_name/",
     "prebuild": "rimraf build",
     "prebuild:test": "rimraf build"
   },

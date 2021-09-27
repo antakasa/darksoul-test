@@ -7,7 +7,7 @@ function DarkSoulHeroText(props) {
 
        <s.Container isMobile={props.isMobile}>
        <s.Symbol isMobile={props.isMobile}>
-        <img src={"https://lusi-dataviz.ylestatic.fi/2020-11-featurepohja/fynd/kc-logo.png"}/>
+        <img src={"https://lusi-dataviz.test.ylestatic.fi/2020-11-featurepohja/fynd/kc-logo.png"}/>
       </s.Symbol>
            <h1 dangerouslySetInnerHTML={{__html: props.text}}></h1></s.Container>
     </s.FullWidthContainer>

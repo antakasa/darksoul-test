@@ -8,7 +8,7 @@ function DarkSoulSubheader(props) {
       <s.Number>{number}</s.Number>
       <s.Header>{header}</s.Header>
       <s.Symbol>
-        <img src={"https://lusi-dataviz.ylestatic.fi/2020-11-featurepohja/fynd/dcvaliotsikkosymboli.png"} />
+        <img src={"https://lusi-dataviz.test.ylestatic.fi/2020-11-featurepohja/fynd/dcvaliotsikkosymboli.png"} />
       </s.Symbol>
     </s.Container>
   );

@@ -157,12 +157,12 @@ const components = {
   },
 };
 
-export const App = () => {
+export const App = ({root}) => {
   if (typeof window !== "undefined") {
     // Client side
     // We read some data from global window object.
 
-    const initialData = window[`${process.env.APP_NAME}-initial-data`];
+    const initialData = JSON.parse(decodeURI(root.dataset.ssr));
     return (
       <Context.Provider value={initialData || {}}>
         <MDXProvider components={components}>

@@ -37,8 +37,8 @@ const markup = (cssImports, initialData, styleTags, html) => `<!DOCTYPE html>
 		<title>Demo page</title>
 	</head>
 	<body>
-  ${cssImports} ${styleTags}${initialData}
-		<div id="app" class="ist" data-yle-vis-id="${pkg.name}">${html}</div>
+  ${cssImports} ${styleTags}
+		<div id="app" data-ssr="${initialData}" class="ist" data-yle-vis-id="${pkg.name}">${html}</div>
 		<script src="./index.js" type="module"></script>
 	</body>
 </html>`;
@@ -60,7 +60,7 @@ async function render() {
     delete contextValue.requests;
 
 
-    let initialData = `<script>window["${pkg.name}-initial-data"] = ${JSON.stringify(contextValue)};</script>`
+    let initialData = encodeURI(JSON.stringify(contextValue))
 
     const html = ReactDOMServer.renderToString(
       sheet.collectStyles(

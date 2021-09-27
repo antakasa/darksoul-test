@@ -15,7 +15,7 @@ export default (root, parameters) => {
   };
 
   hydrate(
-    <App />,
+    <App root={root} />,
     root
   );
 };
