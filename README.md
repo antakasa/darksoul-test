@@ -4,7 +4,7 @@ Kokeilu, jonka tarkoitus on testata kolmea asiaa:
  2. React-toteutusen rendaaminen buildissa html:ksi ```ReactDOMServer.renderToString()```, ja clientissä hydratoiminen ```ReactDOMServer.hydrate()```. 
  3. Github action suorittaa npm run buildin ja pushaa static hostingiin (tällä hetkellä Github Pages)
 
-Käynnistäminen:
+Lokaalissa:
 
 1. yhdessä terminal-ikkunassa:
  ```npm run createhtml```
