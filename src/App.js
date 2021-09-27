@@ -49,6 +49,7 @@ const useServerEffect = ({ key, effect }) => {
 };
 
 const DataProvider = (props) => {
+  console.log(props)
   const effect = () =>
     formatFetchedData({
       type: props.type,

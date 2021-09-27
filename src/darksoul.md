@@ -3,6 +3,7 @@ otsikko: Dark Souls is one of the most challenging video games in the world. Our
 ingressi: Everything disappears only to repeat itself in exactly the same way. This is what the video game Dark Souls teaches us. The essayist Jantso Jokelin spent five years playing one of the world’s most complex video games. He became cynical and learned how to pray. To celebrate the tenth anniversary of Dark Souls, he has now compiled ten attempts to understand this most operatic of mythological worlds.
 ---
 
+<!-- Asenna MDX-extension niin syntax-highlightit yms. toimii -->
 
 <Header
   ingressi={frontMatter.ingressi}
