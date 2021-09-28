@@ -12,6 +12,6 @@ Lokaalissa:
  ```npm run createhtml```
 4. toisessa terminal-ikkunassa ```npm run start``` 
 5. http://localhost:1234/darksoul.html
-6. Artikkelin sisältö löytyy ```src/darksoul.md```
+6. Artikkelin sisältö löytyy ```src/darksoul.md``` ....
 
 
