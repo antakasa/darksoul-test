@@ -22,13 +22,16 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    steps:
+    steps:            
+
+
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      - uses: bahmutov/npm-install@v1
 
-      # Install dependencies with npm
+      # Install dependencies with npm-install@v1
       - name: Install dependencies
-        run: npm ci
+        run: npm t
 
 
       # Build the project and add .nojekyll file to supress default behaviour
